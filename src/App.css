@@ -1,0 +1,152 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  width: 600px;
+  height: 600px;
+
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+/* NAVBAR SECTION */
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 92px;
+
+  padding-left: 28px;
+  padding-right: 28px;
+
+  background-color: #ffffff;
+  filter: drop-shadow(0px 1px 4px #00000040);
+}
+
+nav.dark {
+  background-color: #21222a;
+  filter: none;
+}
+
+.nav-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-logo__img {
+  height: 100%;
+}
+
+.nav-logo > span {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #00d8ff;
+}
+
+.nav-toggle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+  width: 180px;
+}
+
+.nav-toggle > span {
+  font-weight: 600;
+}
+
+.nav-toggle__text-light {
+  color: #2b283a;
+}
+
+nav.dark .nav-toggle__text-light {
+  color: #918e9b;
+}
+
+.nav-toggle__text-dark {
+  color: #d5d4d8;
+}
+
+nav.dark .nav-toggle__text-dark {
+  color: #ffffff;
+}
+
+.nav-toggle__slider {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  width: 40px;
+  height: 20px;
+
+  padding-left: 2px;
+  padding-right: 2px;
+
+  background-color: #2b283a;
+  border-radius: 100px;
+}
+
+nav.dark .nav-toggle__slider {
+  justify-content: flex-end;
+  background-color: #ffffff;
+}
+
+.nav-toggle__slider-circle {
+  width: 16px;
+  height: 16px;
+
+  background-color: #ffffff;
+  border-radius: 100%;
+  border: none;
+}
+
+nav.dark .nav-toggle__slider-circle {
+  background-color: #2b283a;
+}
+
+/* MAIN SECTION */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  position: relative;
+
+  height: 100%;
+
+  padding: 56px 28px;
+
+  background: no-repeat url('/src/assets/react-icon-light.png');
+  background-position: right 80%;
+  background-size: 28%;
+  color: #2b283a;
+}
+
+main.dark {
+  background: no-repeat url('/src/assets/react-icon-dark.png');
+  background-position: right 80%;
+  background-size: 28%;
+  background-color: #282d35;
+  color: #ffffff;
+}
+
+.main-list {
+  max-width: 480px;
+}
+
+.main-list > li::marker {
+  color: #00d8ff;
+  font-size: 28px;
+}
+
+.main-list > li {
+  font-size: 20px;
+  padding-block: 8px;
+}
